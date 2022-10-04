@@ -1,3 +1,31 @@
 #paineis-sobre {
     margin-top: 20px;
 }
+.titulo-depoinemtno {
+    background-color: #0275d8;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: #ffffff;
+    margin-bottom: 0;
+    font-size: 24px;
+}
+.caixa-email{
+    display: flex;
+    align-items: top;
+}
+.caixa-radio{
+    width: 100%;
+}
+.caixa-radio .radio:first-child{
+    margin-top: 0;
+}
+.rodape {
+    background-color: #333;
+    color: #ffffff;
+    margin-top: 20px;
+    padding: 20px  ;
+}
+.rodape address:last-child {
+    margin-bottom: 0;
+
+}

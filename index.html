@@ -10,8 +10,21 @@
 
 </head>
 <body>
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <ul class="nav navbar-nav">
+                    <li><a href="#sobre-nos">Sobre nós</a></li>
+                    <li><a href="#Nossos-Projetos">Nossos Projetos</a></li>
+                    <li><a href="#Depoimentos">Depoimentos</a></li>
+                    <li><a href="#Video">Video</a></li>
+                    <li><a href="#Contato">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     <!-- parte 01 -->
-    <section class="container">
+    <section id="sobre-nos" class="container">
         <h2>Sobre Nós</h2>
         <img class="img-responsive" src="img/empresa.jpg" alt="">
         <!-- O data-toggle serve para identificar qual ação será executada. O data-target serve para identificar em qual elemento ocorrerá a ação. -->
@@ -58,7 +71,7 @@
             <p>Mais de 5 milhões de clientes satisfeitos em todo o mundo.</p>
         </div>
     </div>
-    <section class="container">
+    <section id="Nossos-Projetos" class="container">
         <h2>Nossos Projetos</h2>
         <figure class="thumbnail">
             <img src="img/projetos/casa-castelo.png" alt="foto da casa castelo">
@@ -106,7 +119,118 @@
         </figure>
     </section>
     <!-- parte 03 -->
+    <section id="Depoimentos">
+        <h2 class="titulo-depoinemtno container">Depoimentos de CLientes</h2>
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+        
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="img/depoimentos/depoimento1.png" alt="...">
+                <div class="carousel-caption">
+                    <h3>Yuri Padilha</h3>
+                    <p>Gostei muito e rápido o serviço.</p>
+                ...
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/depoimentos/depoimento2.png" alt="...">
+                <div class="carousel-caption">
+                    <h3>Fernando Stafaneni</h3>
+                    <p>Excelente trabalho.</p>
+                ...
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/depoimentos/depoimento3.png" alt="...">
+                <div class="carousel-caption">
+                    <h3>Caio Sauzas</h3>
+                    <p>Gostei, competência em primeiro lugar.</p>
 
+                ...
+                </div>
+            </div>
+            ...
+            </div>
+        
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+    <!-- parte 05 -->
+    <section id="Video" class="container">
+        <h2 >Video Institucional</h2>
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/sQ7LgOFnqsE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+    <!-- parte 05 -->
+    <section id="Contato" class="container">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco!</p>
+    </section>
+    <!-- parte 05 -->
+    <form class="container">
+        <div class="form-group">
+            <label for="contato-nome">Nome</label>
+            <input type="text" class="form-control"  id="contato-nome" placeholder="Seu nome">
+        </div>
+        <div class="form-group">
+            <label for="contato-email">Email</label>
+
+            <div class="input-group">
+                <div class="input-group-addon">@</div>
+                <input type="email" class="form-control" id="contato-email" placeholder="Seu Email">
+            </div>
+        </div>
+
+        <div class="caixa-email">
+            <div class="caixa-radio">
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="tipo-pessoa" checked> Pessoa Física
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="tipo-pessoa"> Pessoa Jurídica
+                    </label>
+                </div> 
+            </div>   
+            <select class="form-control caixa-combo">
+                <option disabled selected >Tipo de Situação</option>
+                <option >Casa</option>
+                <option >Apartamento</option>
+                <option >Mansão</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+
+    <footer class="container rodape">
+        <address>
+            <strong>TopCasaFina Arquitetura</strong><br>
+            Rua Vergueiro, 3185, Vila Mariana<br>
+            Tel: 00 0000 0000 00 0000 0000<br>
+
+        </address>
+        <address>
+            Email: contato.casafina@alura.com.br<br>
+        </address>
+    </footer>
     <script src="jquery.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
